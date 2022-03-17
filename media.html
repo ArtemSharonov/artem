@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .log{
+            border: 1px solid black;
+            height: 500px;
+            width: 1000px;
+        }
+        .log p{
+            font-size: 34px;
+        }
+        .log img{
+            max-width: 100%;
+            height: 200px;
+            width: 280px;
+        }
+
+        @media screen and (max-width: 1010px){
+            .log{
+                width: 800px;
+            }
+        }
+        @media screen and (max-width: 810px){
+            .log{
+                max-width: 100%;
+            }
+        }
+        @media screen and (max-width: 783px){
+            .log p{
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="log">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+        dolorum fugit minima mollitia obcaecati quis quo veniam. Blanditiis, consectetur
+        culpa dicta dolores impedit magni maxime mollitia, nemo provident vitae voluptates?</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="">
+</div>
+</body>
+</html>
