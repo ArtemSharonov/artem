@@ -17,14 +17,17 @@
             text-align: center;
         }
         h3{
+            height: 54px;
             background-color: #16161c;
             color: white;
             margin-bottom: 0;
+            padding: 10px;
         }
         .text{
             color: white;
         }
         h1{
+            height: 88px;
             text-align: center;
             background-color: #16161c;
             color: white;
@@ -32,15 +35,20 @@
             margin-top: 20px;
         }
         .pic1{
+            display: flex;
+            align-items: center;
             background-image: url("images/green.png");
             height: 130px;
-
         }
         .pic2{
+            display: flex;
+            align-items: center;
             background-image: url("images/blue.png");
             height: 130px;
         }
         .pic3{
+            display: flex;
+            align-items: center;
             background-image: url("images/purple.png");
             height: 130px;
         }
@@ -49,6 +57,44 @@
             margin-left: auto;
             margin-right: auto;
         }
+        #first{
+            border-bottom: 8px solid #529d52;
+        }
+        #second{
+            border-bottom: 8px solid #00698c;
+        }
+        #third{
+            border-bottom: 8px solid #890f9f;
+        }
+        @media screen and (max-width: 1200px){
+            .col{
+                max-width: 720px;
+            }
+            h1{
+                font-size: 25px;
+            }
+            h3{
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 992px){
+            .row-cols-3{
+                display: flex;
+                flex-direction: column;
+            }
+            .col{
+                max-width: 100%;
+                margin-top: 15px;
+            }
+        }
+        @media screen and (max-width: 362px){
+            h1{
+                font-size: 20px;
+            }
+            h3{
+                font-size: 17px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -56,10 +102,10 @@
 <div class="container">
     <div class="row row-cols-3">
         <div class="col">
-            <div class="box">
+            <div class="box" id="first">
                 <h3>Облачное вычисление</h3>
                 <div class="pic1">
-                    <img src="images/adv-30.png" alt="зеленый">
+                    <img class="i1" src="images/adv-30.png" alt="зеленый">
                 </div>
                 <div class="text">
                     Облачные вычисления SaaS<br> Credit позволяет нашим <br>
@@ -78,7 +124,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="box">
+            <div class="box" id="second">
                 <h3>Безопасность</h3>
                 <div class="pic2">
                     <img src="images/adv-31.png" alt="голубой">
@@ -94,7 +140,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="box">
+            <div class="box" id="third">
                 <h3>Гибкая система</h3>
                 <div class="pic3">
                     <img src="images/adv-32.png" alt="фиолетовый">
